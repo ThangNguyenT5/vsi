@@ -1,0 +1,114 @@
+.search-mona {
+    position: relative;
+    width: 100%;
+}
+
+.search {
+    &-wrap {
+        @include flex;
+        align-items: stretch;
+        position: relative;
+    }
+
+    &-input {
+        @include font-pri;
+        outline: none;
+        border-radius: 0.4rem;
+        border: 1px solid transparent;
+        @include fz-14;
+        color: $color-text;
+        flex: 1;
+        height: 4rem;
+        padding: 1.2rem 0;
+        padding-right: 4rem;
+        padding-bottom: 1.4rem;
+        background-color: $color-white;
+        padding-left: 1.6rem;
+        transition: 0.4s;
+        line-height: 1;
+        min-width: unset;
+        width: 100%;
+        &::placeholder {
+            color: #8C8C8C;
+        }
+
+        &:focus {
+            border: 1px solid $color-second;
+        }
+    }
+
+    &-btn {
+        @include mid-flex;
+        flex-shrink: 0;
+        width: 3.2rem;
+        height: 3.2rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0.4rem;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        display: block;
+        transition: 0.4s ease-in-out;
+        flex-shrink: 0;
+        &:hover {
+            background-color: $color-second;
+        }
+
+        .icon {
+            width: 16px;
+            height: 16px;
+            margin-top: 0.2rem;
+        }
+    }
+}
+
+.search-form {
+    margin-top: 3rem;
+    &-wr {
+        position: relative;
+        max-width: 65rem;
+    }
+    &-input {
+        width: 100%;
+        color: $color-text-grey;
+        @include fz-14;
+        font-weight: 400;
+        letter-spacing: 0.005em;
+        padding: 1.5rem 3.8rem;
+        padding-right: 6rem;
+        border-radius: 3.2rem;
+        border: none;
+        outline: none;
+        transition: all 0.3s linear;
+
+
+        &.placeholder {
+            opacity: 0.6;
+            color: #444444;
+            letter-spacing: 0.005em;
+        }
+    }
+    &-btn {
+        width: 3.9rem;
+        height: 3.9rem;
+        background-color: $color-pri;
+        border-radius: 100rem;
+        @include mid-flex;
+        position: absolute;
+        right: 0.8rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        .icon {
+            transition: inherit;
+        }
+        
+        @include hover {
+            .icon {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

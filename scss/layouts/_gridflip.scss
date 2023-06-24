@@ -1,0 +1,252 @@
+.grid {
+    &-layout {
+        display: grid;
+        grid-template-areas: 
+        "a1 a2 a3 a4"
+        "b1 b2 b3 b4";
+        grid-auto-columns: minmax(10rem,4fr);
+        grid-auto-rows: minmax(10rem,3fr);
+        transition: all 0.3s linear;
+
+        @include max(800px) {
+            grid-template-areas: 
+            "a1 a2"
+            "a3 a4"
+            "b1 b2"
+            "b3 b4";
+        }
+    }
+    &-it {
+        max-height: 40rem;
+        &-wr {
+            height: 100%;
+            transition: all 0.3s linear;
+        }
+        &-box {
+            height: 100%;
+            .grid-it {
+                &-hd {
+                    &-icon {
+                        width: 100%;
+                        max-width: 8.2rem;
+                        margin-bottom: 1.2rem;
+                        transition: inherit;
+                        @include mid-flex;
+                        
+                        @include max (1200px) {
+                            max-width: 5.2rem;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .h-title {
+                        @include fz-24;
+                        font-weight: 700;
+                        line-height: 1.5;
+                        margin-bottom: 2.4rem;
+
+                        @include max(800px) {
+                            margin-bottom: 2rem;
+                        }
+                        @include max(600px) {
+                            margin-bottom: 1.2rem;
+                        }
+                    }
+                }
+                &-ctn {
+                    .txt {
+                        @include lc(4);
+                        font-weight: 300;
+                        @include max(1200px) {
+                            @include fz-14;
+                        }
+                    }
+                }
+            }
+        }
+        &-img {
+            @include imgPd(4,3);
+            height: 100%;
+            img {
+                @include imgCover;
+
+            }
+        }
+    }
+}
+.flip {
+    &-box {
+        &-main {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            @include mid-flex;
+
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+
+            perspective: 1200px;
+            -moz-perspective: 1200px;
+            -webkit-perspective: 1200px;
+            -o-perspective: 1200px;
+            -ms-perspective: 1200px;
+
+            -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+            -webkit-transition: 0.6s;
+                    transition: 0.6s;
+            &:hover {
+                .main-inner {
+                    transform: rotate3d(0, 1, 0, 180deg);
+                    transform-origin: 50% 50% !important;
+                    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+                    -webkit-transform-origin: 50% 50% !important;
+                }
+            }
+
+            .main-inner {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                
+                transform-style: inherit;
+                -webkit-transform-style: inherit;
+                -moz-transform-style: inherit;
+                -o-transform-style: inherit;
+                -ms-transform-style: inherit;
+
+                perspective: inherit;
+                -moz-perspective: inherit;
+                -webkit-perspective: inherit;
+                -o-perspective: inherit;
+                -ms-perspective: inherit;
+                transition-property: box-shadow, transform;
+                transition-duration: 0.9s;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+        &-ctn {
+            width: 100%;
+            height: 100%;
+            padding: 5.2rem 2.8rem;
+            @include flex;
+            align-items: stretch;
+            flex-direction: column;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            background-size: cover;
+            background: greenyellow;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: all 0.3s linear;
+
+            transform-style: inherit;
+            -webkit-transform-style: inherit;
+            -moz-transform-style: inherit;
+            -o-transform-style: inherit;
+            -ms-transform-style: inherit;
+
+            perspective: inherit;
+            -moz-perspective: inherit;
+            -webkit-perspective: inherit;
+            -o-perspective: inherit;
+            -ms-perspective: inherit;
+
+            @include max(1200px) {
+                padding: 2.2rem 1.8rem;
+            }
+            @include max(800px) {
+                padding: 1.8rem 1.4rem;
+            }
+            @include max(357px) {
+                padding: 1.4rem 1rem;
+            }
+        }
+        &-it {
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+            @include min (800px) {
+                justify-content: space-between;
+            }
+        }
+        &-inner {
+            @include flex;
+            flex: 1 auto;
+        }
+        &-btn {
+            .txt {
+                color: $color-text;
+                
+            }
+            @include hover {
+                .txt {
+                    color: $color-white;
+                }
+            }
+            &::after {
+                background-color: $color-text;
+            }
+        }
+    }
+    &-front {
+        background-color: #FCFAF8;
+        transform-style: inherit;
+        -webkit-transform-style: inherit;
+        -moz-transform-style: inherit;
+        -o-transform-style: inherit;
+        -ms-transform-style: inherit;
+
+        perspective: inherit;
+        -moz-perspective: inherit;
+        -webkit-perspective: inherit;
+        -o-perspective: inherit;
+        -ms-perspective: inherit;
+        
+        .flip-box {
+            &-inner {
+                transform: translate3d(0, 0, 60px) scale(0.85);
+                -webkit-transform: translate3d(0, 0, 60px) scale(0.85);
+            }
+        }
+    }
+    &-back {
+        width: 100%;
+        height: 100%;
+        background: $color-pri;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate3d(0, 1, 0, 180deg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        transform-style: inherit;
+        -webkit-transform-style: inherit;
+        -moz-transform-style: inherit;
+        -o-transform-style: inherit;
+        -ms-transform-style: inherit;
+
+        perspective: inherit;
+        -moz-perspective: inherit;
+        -webkit-perspective: inherit;
+        -o-perspective: inherit;
+        -ms-perspective: inherit;
+
+        .flip-box {
+            &-inner {
+                @include mid-flex;
+                transform: translate3d(0, 0, 60px) scale(0.95);
+                -webkit-transform: translate3d(0, 0, 60px) scale(0.95);
+
+            }
+        }
+    }
+}

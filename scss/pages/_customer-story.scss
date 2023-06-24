@@ -1,0 +1,43 @@
+.bg {
+    &-w {
+        background-color: $color-white;
+    }
+    &-t {
+        background-color: #fcfaf8;
+    }
+}
+.story {
+    margin-top: 5rem;
+    .grid {
+        &-it {
+            @include max(800px) {
+                &.it{
+                    &-1 {
+                        grid-area: a1;
+                    }
+                    &-2 {
+                        grid-area: a2;
+                    }
+                    &-3 {
+                        grid-area: a4;
+                    }
+                    &-4 {
+                        grid-area: a3;
+                    }
+                    &-5 {
+                        grid-area: b2;
+                    }
+                    &-6 {
+                        grid-area: b1;
+                    }
+                    &-7 {
+                        grid-area: b3;
+                    }
+                    &-8 {
+                        grid-area: b4;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,218 @@
+.form-contact {
+    background-color: $color-white;
+    .form {
+        &-hd {
+            max-width: 90rem;
+            .intro-desc {
+                .txt {
+                    &:not(:last-child) {
+                        margin-bottom: 1.6rem;
+                    }
+                }
+            }
+            .intro {
+                &-hd {
+                    margin-bottom: 3.8rem;
+
+                    @include max(800px) {
+                        margin-bottom: 1.6rem;
+                    }
+                }
+                &-desc {
+                    margin-top: 0;
+                    margin-bottom: 3.8rem;
+                    @include max(800px) {
+                        margin-bottom: 1.8rem;
+                    }
+                }
+            }
+        }
+        &-main {
+            @include flex;
+            .form {
+                &-it {
+                    @include max (800px) {
+                        width: 100%;
+                    }
+                }
+                &-it-img {
+                    @include imgPd(1,1);
+                    border-radius: 0.8rem;
+                    overflow: hidden;
+                    margin-top: 2.4rem;
+                    transition: all 0.3s linear;
+
+                    @include max (800px) {
+                        @include imgPd (9,16);
+                        margin-top: 2rem;
+
+                    }
+                    img {
+                        @include imgCover;
+                    }
+                }
+                &-control {
+                    
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                        @include max (800px) {
+                            margin-bottom: 1.2rem;
+                        }
+                    }
+                    label {
+                        display: block;
+                        @include fz-16;
+                        line-height: 1.6;
+                        font-weight: 700;
+                        color: $color-text;
+                        margin-bottom: 0.8rem;
+
+                    }
+                    input {
+                        width: 100%;
+                        height: 4.4rem;
+                        border: 1px solid transparent;
+                        border-bottom: 1px solid $color-pri;
+                        // border-radius: 0.8rem;
+                        outline: none;
+                        padding: 1.2rem 1.6rem;
+                        background-color: #FCFAF8;
+                        transition: all 0.3s linear;
+
+
+                        @include max (800px) {
+                            padding: 0.6rem 1rem;
+
+                        }
+                        @include hover {
+                            border: 1px solid $color-pri;
+                            
+                        }
+                        &:focus {
+                            border: 1px solid $color-pri;
+                        }
+                    }
+                    select {
+                        display: none;
+                    }
+                    textarea {
+                        width: 100%;
+                        min-height: 19rem;
+                        border: none;
+                        // border-radius: 0.8rem;
+                        outline: none;
+                        color: $color-text;
+                        background-color: #FCFAF8;
+                        padding: 1.2rem 1.6rem;
+                        @include fz-16;
+                        line-height: 1.2;
+                        resize: vertical;
+                        border: 1px solid transparent;
+                        border-bottom: 1px solid $color-pri;
+                        transition: all 0.3s linear;
+                        @include hover {
+                            border: 1px solid $color-pri;
+                            // color: $color-text;
+                        }
+                        &:focus {
+                            border: 1px solid $color-pri;
+                            // color: $color-text;
+                        }
+                        ::placeholder {
+                            color: #808080;
+                        }
+                    }
+                }
+                &-btn {
+                    transition: all 0.3s linear;
+                    @include max (800px) {
+                        margin-top: 2rem;
+                    }
+                    .btn-submit {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &.have-select {
+        .form {
+            &-main {
+                .form {
+                    &-control {
+                        @include max (600px) {
+                            width: 100%;
+                            &-wr {
+                                margin-bottom: 1.2rem;
+                            }
+                        }
+                        textarea {
+                            min-height: 9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bnner-contact {
+    position: relative;
+    &-img {
+        position: absolute;
+        inset: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            opacity: 65%;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 84.67%);
+            width: 100%;
+            height: 100%;
+            inset: 0;
+        }
+    }
+    &-wr {
+        position: relative;
+        text-align: center;
+    }
+    &-ctn {
+        max-width: 70rem;
+        margin: 0 auto;
+        .sub-hd {
+            color: $color-pri;
+            margin-bottom: 1.4rem;
+            @include max(600px) {
+                @include fz-12;
+            }
+        }
+        .h-title {
+            color: $color-white;
+            @include max(600px) {
+                @include fz-16;
+            }
+        }
+    }
+}
+.contact-map-wr {
+    overflow: hidden;
+    .map {
+        @include imgPd(520,1728);
+        min-height: 30rem;
+        iframe {
+            @include imgCover;
+        }
+    }
+}

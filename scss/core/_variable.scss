@@ -1,0 +1,76 @@
+$color-pri: #C22726;
+$color-second: rgba(183, 35, 40, 0.25);
+$color-third: #D9D9D9;
+$color-four: #E9F6FC;
+$color-five: #3385FF;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-text:#1C1919;
+$color-text-grey: #606060;
+$color-sub-text:#666666;
+$color-border: rgba(0, 0, 0, 0.1);
+// Gradient
+$gradient: linear-gradient(180deg, #E31937 0%, #9B1B08 100%);
+$gradient2: linear-gradient(180deg, #9B1B08 0%, #E31937 50%, #9B1B08 100%);
+//Boxshadow
+$shadow: 4px 8px 12px rgba(0, 0, 0, 0.05);
+// Clip
+$clipright : polygon(0 0, 0 100%, 100% 100%);
+$clipleft : polygon(100% 0, 0 100%, 100% 100%);
+// Height
+:root {
+  --height: 9.6rem;
+  @media (max-width:1200px) {
+    --height:8rem;
+  }
+  @media (max-width:600px) {
+    --height:6rem;
+  }
+}
+// Font Awesome
+$fontawesome: 'Font Awesome 5 Pro';
+
+//Responsive
+$res-mobile: 1200px;
+$res-mobile-min: 1201px;
+$mobile: 500px;
+//Distance
+$distance-header: 136px;
+$distance-header-mobile: 72px;
+$distance-header-sticky: 60px;
+$distance-header-mobile-sticky: 56px;
+$border-line: 1px solid rgba(0, 0, 0, 0.1);
+$radius: 6px;
+//Clip path
+$clipleft: polygon(100% 0, 0 0, 100% 100%);
+$clipright: polygon(0 0, 0 100%, 100% 100%);
+//Grid 
+$grid-gutter-width: 2.4rem;
+$grid-columns: 12;
+$gutters: (
+  1: 2.4rem,
+);
+
+$xxs-min: 376px;
+$xs-min: 576px; // CÓ THỂ TÙY CHỈNH
+$sm-min: 768px; // KHÔNG THAY ĐỔI
+$md-min: 992px; // KHÔNG THAY ĐỔI
+$lg-min: 1200px; // KHÔNG THAY ĐỔI
+$xl-min: 1400px; // CÓ THỂ TÙY CHỈNH
+
+$xxs-max: ($xxs-min - 0.02); // Smallest Mobile
+$xs-max: ($xs-min - 0.02); // Small Mobile
+$sm-max: ($sm-min - 0.02); // Mobile
+$md-max: ($md-min - 0.02); // Tablet
+$lg-max: ($lg-min - 0.02); // Desktop
+$xl-max: ($xl-min - 0.02); // Large Desktop
+
+$grid-breakpoints: (
+  "xxs": $xxs-min,
+  "xs": $xs-min,
+  "sm": $sm-min,
+  "md": $md-min,
+  "lg": $lg-min,
+  "xl": $xl-min,
+);
+

@@ -1,0 +1,410 @@
+.btn {
+    @include flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    padding: 1.4rem 3.2rem;
+    min-width: 10rem;
+    border-radius: 0.8rem;
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.05);
+
+    img {
+        position: relative;
+        z-index: 3;
+        margin-left: 0.5rem;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .txt {
+        font-weight: 700;
+        line-height: 1.2;
+        color: $color-black;
+        transition: 0.4s;
+        @include fz-16;
+        display: block !important;
+
+        @include max(500px) {
+            @include fz-14;
+            white-space: nowrap;
+        }
+    }
+
+    &.center {
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    &-pri {
+        @extend .btn;
+        background-color: $color-pri;
+        width: max-content;
+        overflow: hidden;
+        border: 0.1rem solid $color-pri;
+
+        .txt {
+            color: $color-white;
+            line-height: 1;
+            z-index: 3;
+            margin-top: 0rem;
+            @include fz-18
+        }
+
+        &::after {
+            content: "";
+            background: $color-white;
+            position: absolute;
+            width: 100%;
+            height: 110%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform: scaleX(0);
+            transform-origin: center right;
+            transition: transform 0.5s ease;
+        }
+
+        @include min($res-mobile-min) {
+            @include hover {
+                .txt {
+                    color: $color-pri;
+                }
+
+                i {
+                    color: $color-pri;
+                }
+
+                &::after {
+                    transform: scale(1);
+                    transform-origin: center left;
+                }
+            }
+        }
+    }
+
+    &-second {
+        @extend .btn;
+        background-color: $color-white;
+        width: max-content;
+        overflow: hidden;
+
+        i {
+            color: $color-text;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            z-index: 3;
+            transition: 0.4s;
+        }
+
+        .txt {
+            color: $color-pri;
+            line-height: 1;
+            z-index: 3;
+            margin-top: 0rem;
+            @include fz-18;
+        }
+
+        &::after {
+            content: "";
+            background: $color-pri;
+            position: absolute;
+            width: 100%;
+            height: 110%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform: scaleX(0);
+            transform-origin: center right;
+            transition: transform 0.5s ease;
+        }
+
+        @include min($res-mobile-min) {
+            @include hover {
+                .txt {
+                    color: $color-white;
+                }
+
+                i {
+                    color: $color-white;
+                }
+
+                &::after {
+                    transform: scale(1);
+                    transform-origin: center left;
+                }
+            }
+        }
+    }
+
+    &-linear {
+        @extend .btn;
+        background-image: $gradient2;
+        background-size: 100% 200%;
+        background-position-y: 100%;
+
+        transition: all 0.3s linear;
+        width: max-content;
+        overflow: hidden;
+
+        i {
+            color: $color-text;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            z-index: 3;
+            transition: 0.4s;
+        }
+
+        .txt {
+            color: $color-white;
+            line-height: 1;
+            z-index: 3;
+            margin-top: 0rem;
+            @include fz-16;
+        }
+
+        @include min($res-mobile-min) {
+            @include hover {
+                background-position-y: 200%;
+
+                
+                .txt {
+                    color: $color-white;
+                }
+
+                i {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    &-search {
+        @extend .btn;
+        background-color: $color-pri;
+        width: max-content;
+        overflow: hidden;
+        border: 0.1rem solid $color-pri;
+        .icon {
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-right: 0.8rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .txt {
+            color: $color-white;
+            line-height: 1;
+            z-index: 3;
+            margin-top: 0rem;
+            @include fz-16;
+        }
+
+        &::after {
+            content: "";
+            background: $color-white;
+            position: absolute;
+            width: 100%;
+            height: 110%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform: scaleX(0);
+            transform-origin: center right;
+            transition: transform 0.5s ease;
+        }
+
+        @include min($res-mobile-min) {
+            @include hover {
+                .txt {
+                    color: $color-pri;
+                }
+
+                i {
+                    color: $color-pri;
+                }
+                img {
+                    filter: brightness(0) saturate(100%) invert(16%) sepia(84%) saturate(6292%) hue-rotate(352deg) brightness(95%) contrast(104%);
+                }
+                &::after {
+                    transform: scale(1);
+                    transform-origin: center left;
+                }
+            }
+        }
+    }
+
+    &-cv {
+        @extend .btn;
+        background-color: $color-five;
+        width: max-content;
+        overflow: hidden;
+        border: 0.1rem solid transparent;
+        i {
+            color: $color-text;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            z-index: 3;
+            transition: 0.4s;
+        }
+
+        .txt {
+            color: $color-white;
+            line-height: 1;
+            z-index: 3;
+            margin-top: 0rem;
+            @include fz-18;
+        }
+
+        &::after {
+            content: "";
+            background: $color-white;
+            position: absolute;
+            width: 100%;
+            height: 110%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform: scaleX(0);
+            transform-origin: center right;
+            transition: transform 0.5s ease;
+        }
+
+        @include min($res-mobile-min) {
+            @include hover {
+                border: 0.1rem solid $color-five;
+                .txt {
+                    color: $color-five;
+                }
+
+                i {
+                    color: $color-white;
+                }
+
+                &::after {
+                    transform: scale(1);
+                    transform-origin: center left;
+                }
+            }
+        }
+    }
+
+    &-more {
+        @extend .btn;
+        background-color: transparent;
+        width: max-content;
+        overflow: hidden;
+        border: 0.1rem solid $color-pri;
+        border-radius: 0.8rem;
+        min-width: 19rem;
+        padding: 1.2rem 3.2rem;
+        i {
+            color: $color-text;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            z-index: 3;
+            transition: 0.4s;
+        }
+
+        .txt {
+            color: $color-pri;
+            line-height: 1;
+            z-index: 3;
+            margin-top: 0rem;
+            @include fz-16;
+            font-weight: 700;
+        }
+
+        &::after {
+            content: "";
+            background: $color-pri;
+            position: absolute;
+            width: 100%;
+            height: 110%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform: scaleX(0);
+            transform-origin: center right;
+            transition: transform 0.5s ease;
+        }
+
+        @include min($res-mobile-min) {
+            @include hover {
+                .txt {
+                    color: $color-white;
+                }
+
+                i {
+                    color: $color-white;
+                }
+
+                &::after {
+                    transform: scale(1);
+                    transform-origin: center left;
+                }
+            }
+        }
+    }
+    &-prev,
+    &-next {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 100rem;
+        flex-shrink: 0;
+        @include mid-flex;
+        background-color: #d1d1d1;
+        transition: 0.4s;
+        cursor: pointer;
+
+        i {
+            color: $color-text;
+            transition: 0.4s;
+            @include fz-10;
+            font-weight: 500;
+        }
+
+        &.current {
+            background-color: $color-pri;
+            pointer-events: none;
+
+            i {
+                color: $color-white;
+            }
+        }
+
+        @include hover {
+            background-color: $color-pri;
+
+            i {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.load-btn {
+    width: fit-content;
+    margin-top: 2.4rem;
+    cursor: pointer;
+
+    .text {
+        color: $color-text;
+    }
+
+    i {
+        @include fz-14;
+        transition: 0.4s;
+        color: $color-text;
+    }
+
+    &.active {
+        i {
+            transform: rotate(180deg);
+        }
+    }
+}

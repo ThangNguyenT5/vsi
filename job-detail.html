@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/backdoor.css" />
+    <link rel="icon" type="image/png" href="./assets/images/logo.png" />
+
+    <title>Chi tiết tuyển dụng</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-logo">
+            <a href="" class="custom-logo-link">
+              <img src="./assets/images/vsi_logo_full.png" alt="" />
+            </a>
+          </div>
+          <div class="header-nav">
+            <div class="menu-nav">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="./index.html" class="menu-link">Trang Chủ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./about.html" class="menu-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item dropdown">
+                  <a class="menu-link">Dịch vụ</a>
+                  <ul class="menu-list">
+                    <li class="menu-item dropdown">
+                      <a href="./cloud-services.html" class="menu-link"
+                        >Cloud Services</a
+                      >
+                      <ul class="menu-list">
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 1 2<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 1 3<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 1 4<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 1 5<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item dropdown">
+                      <a href="./software-services.html" class="menu-link"
+                        >Software Services</a
+                      >
+                      <ul class="menu-list">
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 2 1<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 2 2<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 2 3<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 2 4<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="./data-services.html" class="menu-link"
+                        >Data Services</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="./infra-services.html" class="menu-link"
+                        >Infra Services</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="./collaboration-services.html" class="menu-link"
+                        >Collaboration Services</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="./customer-story.html" class="menu-link"
+                    >Câu chuyện khách hàng</a
+                  >
+                </li>
+                <li class="menu-item current-menu-item">
+                  <a href="./job.html" class="menu-link">Làm việc tại VSI</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-search-wrapper">
+            <div class="header-search">
+              <img
+                src="./assets/images/search-icon.svg"
+                alt=""
+                class="header-search-icon"
+              />
+            </div>
+            <div class="header-search-box">
+              <form method="" id="searchform" class="searchform" action="">
+                <div class="search-wrap">
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Tìm kiếm . . ."
+                  />
+                  <button type="submit" class="search-btn">
+                    <img
+                      src="./assets/images/search-icon.svg"
+                      alt=""
+                      class="icon"
+                    />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="burger">
+            <div class="hamburger" id="hamburger">
+              <svg class="ham" viewBox="0 0 100 100" width="40">
+                <path
+                  class="line top"
+                  d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+                ></path>
+                <path class="line middle" d="m 30,50 h 40"></path>
+                <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <a href="./contact.html" class="header-contact btn btn-linear">
+            <span class="txt">Liên hệ</span>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-overlay"></div>
+      <div class="mobile">
+        <div class="mobile-con">
+          <div class="mobile-wr">
+            <div class="mobile-nav">
+              <div class="menu-nav menu-have-icon">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="./index.html" class="menu-link"> Trang Chủ </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./about.html" class="menu-link"> Giới thiệu </a>
+                  </li>
+                  <li class="menu-item dropdown current_page_item">
+                    <a class="menu-link"> Dịch vụ </a>
+                    <ul class="menu-list">
+                      <li class="menu-item dropdown">
+                        <a href="./cloud-services.html" class="menu-link">
+                          Cloud Services
+                        </a>
+                        <ul class="menu-list">
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 1 1 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 1 2 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 1 3 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 1 4 </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item dropdown">
+                        <a href="./software-services.html" class="menu-link">
+                          Software Services
+                        </a>
+                        <ul class="menu-list">
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 2 1 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 2 2 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 2 3 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 2 4 </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item current_page_item">
+                        <a href="./data-services.html" class="menu-link">
+                          Data Services
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="./infra-services.html" class="menu-link">
+                          Infra Services
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="./collaboration-services.html"
+                          class="menu-link"
+                        >
+                          Collaboration Services
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./customer-story.html" class="menu-link">
+                      Câu chuyện khách hàng
+                    </a>
+                  </li>
+                  <li class="menu-item current-menu-item">
+                    <a href="./job.html" class="menu-link">
+                      Làm việc tại VSI
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mobile-search-wr">
+              <div class="mobile-contact-wr">
+                <a href="./contact.html" class="mobile-contact btn btn-linear">
+                  <span class="txt">Liên hệ</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pg"></div>
+    </header>
+    <main class="main">
+      <div class="bn bn-bc">
+        <div class="home-bn-it">
+          <div class="home-bn-wr">
+            <div class="home-bn-ctn ml-140" data-aos="fade-left">
+              <div class="home-hd">
+                <p class="sub-hd fw-7">Chào mừng đến với Công ty Cổ phần VSI</p>
+                <div class="home-decor-circle">
+                  <div class="circle-wr">
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-desc">
+                <h2 class="h-title fw-7">Thông tin tuyển dụng</h2>
+                <p class="txt-w desc">
+                  Lorem ipsum dolor sit amet consectetur. Nisl magna quis
+                  habitant tortor nibh amet odio aenean. Aliquam massa sodales
+                  massa mi. Nullam nam id lorem odio. Pharetra nunc.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="home-bn-bg white">
+            <div class="home-bn-img">
+              <img src="./assets/images/story-bg.png" alt="" />
+            </div>
+            <div class="home-bn-decor">
+              <img src="./assets/images/decor-bn.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="bnner-service-bc color-pri">
+          <div class="container">
+            <div class="breadcrumb" data-aos="fade-up">
+              <ul class="breadcrumb-list white">
+                <li class="breadcrumb-item">
+                  <a href="./index.html" class="breadcrumb-link">Trang chủ</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="" class="breadcrumb-link">Tuyển dụng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="job-detail">
+        <div class="job-detail-heading ss-pd-100">
+          <div class="container">
+            <div class="job-dt-title" data-aos="fade-up">
+              <div class="job-dt-name">
+                <div class="job-dt-icon">
+                  <img src="./assets/images/data-analytic-icon.svg" alt="" />
+                </div>
+                <div class="job-dt-name-wr">
+                  <h2 class="job-title">
+                    Nhân viên Phân tích dữ liệu kinh doanh
+                  </h2>
+                  <p class="txt desc">
+                    Hạn nhận hồ sơ: <span class="bold">20/4/2023</span>
+                  </p>
+                </div>
+              </div>
+              <div class="job-dt-apply modal-btn">
+                <div class="btn btn-linear">
+                  <span class="txt">Ứng tuyển ngay</span>
+                  <img
+                    class="icon"
+                    src="./assets/images/send-icon.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="job-dt-salary" data-aos="fade-up">
+              <ul class="salary-list row">
+                <li class="salary-it col-3">
+                  <div class="salary-icon">
+                    <img src="./assets/images/dollar.svg" alt="" />
+                  </div>
+                  <div class="salary-ctn">
+                    <p class="txt salary-title">Thu nhập:</p>
+                    <p class="txt salary-desc bold">Từ 10-15 triệu</p>
+                  </div>
+                </li>
+                <li class="salary-it col-3">
+                  <div class="salary-icon">
+                    <img src="./assets/images/part-time.svg" alt="" />
+                  </div>
+                  <div class="salary-ctn">
+                    <p class="txt salary-title">Hình thức:</p>
+                    <p class="txt salary-desc bold">Toàn thời gian</p>
+                  </div>
+                </li>
+                <li class="salary-it col-3">
+                  <div class="salary-icon">
+                    <img src="./assets/images/hat.svg" alt="" />
+                  </div>
+                  <div class="salary-ctn">
+                    <p class="txt salary-title">Bằng cấp:</p>
+                    <p class="txt salary-desc bold">Đại học trở lên</p>
+                  </div>
+                </li>
+                <li class="salary-it col-3">
+                  <div class="salary-icon">
+                    <img src="./assets/images/pin-icon.svg" alt="" />
+                  </div>
+                  <div class="salary-ctn">
+                    <p class="txt salary-title">Nơi làm việc:</p>
+                    <p class="txt salary-desc bold">Hà Nội</p>
+                  </div>
+                </li>
+                <li class="salary-it col-3">
+                  <div class="salary-icon">
+                    <img src="./assets/images/work.svg" alt="" />
+                  </div>
+                  <div class="salary-ctn">
+                    <p class="txt salary-title">Kinh nghiệm:</p>
+                    <p class="txt salary-desc bold">2-3 năm</p>
+                  </div>
+                </li>
+                <li class="salary-it col-3">
+                  <div class="salary-icon">
+                    <img src="./assets/images/ranking.svg" alt="" />
+                  </div>
+                  <div class="salary-ctn">
+                    <p class="txt salary-title">Cấp bậc:</p>
+                    <p class="txt salary-desc bold">Nhân viên</p>
+                  </div>
+                </li>
+                <li class="salary-it col-3">
+                  <div class="salary-icon">
+                    <img src="./assets/images/team-2-icon.svg" alt="" />
+                  </div>
+                  <div class="salary-ctn">
+                    <p class="txt salary-title">Số lượng tuyển:</p>
+                    <p class="txt salary-desc bold">2 người</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="job-detail-main ss-pd-100">
+          <div class="container">
+            <div class="jd-wr">
+              <div class="jd-box col-9">
+                <div class="jd-ctn">
+                  <div class="jd-it" data-aos="fade-up">
+                    <p class="txt jd-tt">Giới thiệu</p>
+                    <p class="txt jd-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Amet lorem senectus eu erat id urna, augue nulla eros.
+                      Eget mauris massa, sagittis in adipiscing posuere ante.
+                      Rhoncus, viverra non dui, in et ullamcorper ultrices.
+                      Egestas viverra vitae habitant eu habitasse sit massa.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Amet lorem senectus eu erat id urna, augue nulla eros.
+                      Eget mauris massa, sagittis in adipiscing posuere ante.
+                      Rhoncus, viverra non dui, in et ullamcorper ultrices.
+                    </p>
+                  </div>
+                  <div class="jd-it" data-aos="fade-up">
+                    <p class="txt jd-tt">Mô tả công việc</p>
+                    <ul class="jd-desc-list">
+                      <li class="jd-desc-it">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        lorem ipsu onsectetur adipiscing elit. .
+                      </li>
+                      <li class="jd-desc-it">
+                        Amet lorem senectus eu erat id urna, augue nulla eros.
+                        Eget mauris massa, sagittis in adipiscing posuere ante.
+                        Rhoncus, viverra non dui, in et ullamcorper ultrices.
+                      </li>
+                      <li class="jd-desc-it">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        lorem ipsum dolor sit amet, consectetu.
+                      </li>
+                      <li class="jd-desc-it">
+                        Lorem ipsum dolor sit amet, consectetur adipiscin tetur
+                        adipiscing elit. Amet lorem senectus posuere ante.
+                        Rhoncus, viverra non dui, in et ullamcorper ultrices.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="jd-it" data-aos="fade-up">
+                    <p class="txt jd-tt">Yêu cầu công việc</p>
+                    <ul class="jd-desc-list">
+                      <li class="jd-desc-it">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        lorem ipsu onsectetur adipiscing elit. .
+                      </li>
+                      <li class="jd-desc-it">
+                        Amet lorem senectus eu erat id urna, augue nulla eros.
+                        Eget mauris massa, sagittis in adipiscing posuere ante.
+                        Rhoncus, viverra non dui, in et ullamcorper ultrices.
+                      </li>
+                      <li class="jd-desc-it">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        lorem ipsum dolor sit amet, consectetu.
+                      </li>
+                      <li class="jd-desc-it">
+                        Lorem ipsum dolor sit amet, consectetur adipiscin tetur
+                        adipiscing elit. Amet lorem senectus posuere ante.
+                        Rhoncus, viverra non dui, in et ullamcorper ultrices.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="jd-it" data-aos="fade-up">
+                    <p class="txt jd-tt">Quyền lợi</p>
+                    <ul class="jd-desc-list">
+                      <li class="jd-desc-it">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        lorem ipsu onsectetur adipiscing elit. .
+                      </li>
+                      <li class="jd-desc-it">
+                        Amet lorem senectus eu erat id urna, augue nulla eros.
+                        Eget mauris massa, sagittis in adipiscing posuere ante.
+                        Rhoncus, viverra non dui, in et ullamcorper ultrices.
+                      </li>
+                      <li class="jd-desc-it">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        lorem ipsum dolor sit amet, consectetu.
+                      </li>
+                      <li class="jd-desc-it">
+                        Lorem ipsum dolor sit amet, consectetur adipiscin tetur
+                        adipiscing elit. Amet lorem senectus posuere ante.
+                        Rhoncus, viverra non dui, in et ullamcorper ultrices.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="jd-related col-3" data-aos="fade-left">
+                <p class="txt jd-tt">Tuyển dụng liên quan</p>
+                <div class="jd-related-wr">
+                  <ul class="related-list">
+                    <li class="related-it">
+                      <div class="related-img-wr">
+                        <a href="" class="related-img">
+                          <img
+                            src="./assets/images/tuyendung-lienquan.png"
+                            alt=""
+                          />
+                          <span class="overlay">
+                            <p class="txt">Xem thêm</p>
+                          </span>
+                        </a>
+                      </div>
+                      <div class="related-ctn">
+                        <a href="" class="txt related-tt">Data analyst</a>
+                        <div class="related-desc">
+                          <div class="related-icon">
+                            <img
+                              src="./assets/images/pin-outline-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <p class="txt">Cầu Giấy, Hà Nội</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="related-it">
+                      <div class="related-img-wr">
+                        <a href="" class="related-img">
+                          <img
+                            src="./assets/images/tuyendung-lienquan.png"
+                            alt=""
+                          />
+                          <span class="overlay">
+                            <p class="txt">Xem thêm</p>
+                          </span>
+                        </a>
+                      </div>
+                      <div class="related-ctn">
+                        <a href="" class="txt related-tt">Data analyst</a>
+                        <div class="related-desc">
+                          <div class="related-icon">
+                            <img
+                              src="./assets/images/pin-outline-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <p class="txt">Cầu Giấy, Hà Nội</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="related-it">
+                      <div class="related-img-wr">
+                        <a href="" class="related-img">
+                          <img
+                            src="./assets/images/tuyendung-lienquan.png"
+                            alt=""
+                          />
+                          <span class="overlay">
+                            <p class="txt">Xem thêm</p>
+                          </span>
+                        </a>
+                      </div>
+                      <div class="related-ctn">
+                        <a href="" class="txt related-tt">Data analyst</a>
+                        <div class="related-desc">
+                          <div class="related-icon">
+                            <img
+                              src="./assets/images/pin-outline-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <p class="txt">Cầu Giấy, Hà Nội</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="related-it">
+                      <div class="related-img-wr">
+                        <a href="" class="related-img">
+                          <img
+                            src="./assets/images/tuyendung-lienquan.png"
+                            alt=""
+                          />
+                          <span class="overlay">
+                            <p class="txt">Xem thêm</p>
+                          </span>
+                        </a>
+                      </div>
+                      <div class="related-ctn">
+                        <a href="" class="txt related-tt">Data analyst</a>
+                        <div class="related-desc">
+                          <div class="related-icon">
+                            <img
+                              src="./assets/images/pin-outline-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <p class="txt">Cầu Giấy, Hà Nội</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="related-it">
+                      <div class="related-img-wr">
+                        <a href="" class="related-img">
+                          <img
+                            src="./assets/images/customer-detail-1.png"
+                            alt=""
+                          />
+                          <span class="overlay">
+                            <p class="txt">Xem thêm</p>
+                          </span>
+                        </a>
+                      </div>
+                      <div class="related-ctn">
+                        <a href="" class="txt related-tt">Data analyst</a>
+                        <div class="related-desc">
+                          <div class="related-icon">
+                            <img
+                              src="./assets/images/pin-outline-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <p class="txt">Cầu Giấy, Hà Nội</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="ft-sign ss-pd" data-aos="fade-up">
+        <div class="container">
+          <div class="ft-sign-row row">
+            <div class="sign-item col-6">
+              <div class="sign-left">
+                <h2 class="h-title fw-7">Đăng ký để nhận cập nhật</h2>
+                <p class="txt-w fw-3">
+                  Lorem ipsum dolor sit amet consectetur. Viverra dolor odio
+                  lectus malesuada proin porta elementum. Tincidunt adipiscing
+                  nisl.
+                </p>
+              </div>
+            </div>
+            <div class="sign-item col-6">
+              <div class="sign-right">
+                <form action="">
+                  <div class="sign-form">
+                    <input
+                      type="text"
+                      class="sign-form-input"
+                      placeholder="Điền email của bạn"
+                    />
+                    <button type="submit" class="sign-form-btn">
+                      <img
+                        src="./assets/images/cursor-icon.svg"
+                        alt=""
+                        class="icon"
+                      />
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-main" data-aos="fade-up">
+        <div class="container">
+          <div class="ft-main-row row">
+            <div class="ft-item col-4">
+              <div class="ft-logo">
+                <a href="" class="custom-logo-link">
+                  <img src="./assets/images/vsi_white_cut.png" alt="" />
+                </a>
+              </div>
+              <div class="ft-contact">
+                <ul class="contact-list">
+                  <li class="contact-item">
+                    <img
+                      class="icon"
+                      src="./assets/images/pin-icon.svg"
+                      alt=""
+                    />
+                    <a
+                      href="https://goo.gl/maps/4yPiNqg6vqtHb1gu9"
+                      class="contact-link"
+                    >
+                      Tầng 3, Tòa AD Building, 82 Dịch Vọng Hậu, P. Dịch Vọng
+                      Hậu, Q. Cầu Giấy, TP. Hà Nội
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <img
+                      class="icon"
+                      src="./assets/images/phone-icon.svg"
+                      alt=""
+                    />
+                    <a href="tel:024 3200 6062" class="contact-link">
+                      024 3200 6062
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <img
+                      class="icon"
+                      src="./assets/images/mail-icon.svg"
+                      alt=""
+                    />
+                    <a href="mailto:info@vsi.com.vn" class="contact-link">
+                      info@vsi.com.vn
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="ft-item col-3">
+              <h3 class="h-title fw-7">Về công ty</h3>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="" class="menu-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Dịch vụ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Câu chuyện khách hàng</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Làm việc tại VSI</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ft-item col-3">
+              <h3 class="h-title fw-7">Dịch vụ của chúng tôi</h3>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="" class="menu-link">Tư vấn công nghệ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Phát triển phần mềm</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Phát triển Blockchain</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Phân tích dữ liệu</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Phát triển Website</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Phát triển ứng dụng di động</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-copy" data-aos="fade-up">
+        <div class="container">
+          <div class="copy ss-pd-40">
+            <span class="desc">
+              <span class="copy-icon"> </span>
+              <p class="txt-w">ToanThang</p>
+              <span class="copy-icon">
+                <img src="./assets/images/copy-icon.svg" alt="" />
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="ft-bg">
+        <img src="./assets/images/ft-bg.png" alt="" />
+      </div>
+    </footer>
+    <div class="back-to-top backToTop">
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+    </div>
+    <div class="modal">
+      <div class="modal-wr">
+        <div class="container">
+          <div class="modal-form">
+            <div class="modal-form-wr">
+              <form action="">
+                <div class="modal-hd">
+                  <p class="txt hd">Ứng tuyển</p>
+                  <p class="txt">Điền thông tin của bạn vào form dưới đây</p>
+                </div>
+                <div class="modal-main">
+                  <div class="form-control-wr row setG">
+                    <div class="form-control col-6">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Họ và tên của bạn"
+                      />
+                    </div>
+                    <div class="form-control col-6">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email của bạn"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-control-wr row setG">
+                    <div class="form-control col-6">
+                      <input
+                        type="tel"
+                        name="tel"
+                        placeholder="Số điện thoại"
+                      />
+                    </div>
+                    <div class="form-control col-6">
+                      <input type="text" name="address" placeholder="Địa chỉ" />
+                    </div>
+                  </div>
+                  <div class="form-control custom-input-file">
+                    <input class="input-field" type="file" name="file" />
+                    <label for="file" class="file-area">
+                      <div class="upload-icon">
+                        <img src="./assets/images/upload-icon.svg" alt="" />
+                      </div>
+                      <span class="txt"> Tải lên CV </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-btn">
+                  <button type="submit" class="form-btn-submit btn btn-linear">
+                    <span class="txt">Liên hệ</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-overlay"></div>
+    </div>
+    <script src="./js/library/jquery/jquery.js"></script>
+    <script src="./js/library/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/library/aos/aos.js"></script>
+    <script src="./js/library/select2/select2.min.js"></script>
+    <script src="./js/library/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="./js/library/gallery/lightgallery-all.min.js"></script>
+    <script src="./js/library/jquery/jquery-migrate.js"></script>
+    <script src="./js/library/smoothscroll/SmoothScroll.min.js"></script>
+    <script src="./js/library/gsap/gsap.js"></script>
+    <script src="./js/library/gsap/scrollTrigger.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

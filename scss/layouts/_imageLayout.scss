@@ -1,0 +1,97 @@
+.image {
+    &-wr {
+        padding-top: calc(690/690*100%);
+        display: block;
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            top: calc(52/690*100%);
+            right: calc(103/690*100%);
+            width: calc(450/690*100%);
+            height: calc(468/690*100%);
+            border-radius: 0.8rem;
+            border: 3px solid #E31937;
+            opacity: 0.2;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(18/690*100%);
+            left: calc(103/690*100%);
+            width: calc(450/690*100%);
+            height: calc(537/690*100%);
+            border-radius: 0.8rem;
+            background-color: #FFF4F4;
+        }
+
+        &.full {
+            &::after {
+                width: calc(443/594*100%);
+                height: calc(415/518*100%);
+                right: unset;
+                left: calc(103/690*100%);
+            }
+            &::before {
+                width: calc(443/594*100%);
+                height: calc(476/518*100%);
+                right: calc(103/690*100%);
+                left: unset;
+            }
+        }
+    }
+    &-it {
+        position: absolute;
+        inset: 0;
+
+    }
+    &-wid {
+        position: absolute;
+        width: 100%;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        z-index: 1;
+        &.h1 {
+            max-width: calc(370/690*100%);
+            top: 0;
+            right: 0;
+            .image-pd {
+                @include imgPd(1,1);
+                img {
+                    @include imgCover;
+                }
+            }
+        }
+        &.h2 {
+            max-width: calc(292/690*100%);
+            top: calc(80/690*100%);
+            left: 0;
+            .image-pd {
+                @include imgPd(1,1);
+                img {
+                    @include imgCover;
+                }
+            }
+        }
+        &.h3 {
+            max-width: calc(386/690*100%);
+            bottom: 0;
+            right: calc(86/690*100%);
+            .image-pd {
+                @include imgPd(1,1);
+                img {
+                    @include imgCover;
+                }
+            }
+        }
+        &.center {
+            .image-pd {
+                @include imgPd(424,590);
+                img {
+                    @include imgCover;
+                }
+            }
+        }
+    }
+}

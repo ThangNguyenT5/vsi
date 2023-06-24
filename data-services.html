@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/backdoor.css" />
+    <link rel="icon" type="image/png" href="./assets/images/logo.png" />
+    <title>Data Services</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-logo">
+            <a href="" class="custom-logo-link">
+              <img src="./assets/images/vsi_logo_full.png" alt="" />
+            </a>
+          </div>
+          <div class="header-nav">
+            <div class="menu-nav">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="./index.html" class="menu-link">Trang Chủ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./about.html" class="menu-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item dropdown current-menu-item">
+                  <a class="menu-link">Dịch vụ</a>
+                  <ul class="menu-list">
+                    <li class="menu-item dropdown">
+                      <a href="./cloud-services.html" class="menu-link"
+                        >Cloud Services</a
+                      >
+                      <ul class="menu-list">
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 1 2<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 1 3<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 1 4<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 1 5<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item dropdown">
+                      <a href="./software-services.html" class="menu-link"
+                        >Software Services</a
+                      >
+                      <ul class="menu-list">
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 2 1<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 2 2<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 2 3<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link"
+                            >Dịch vụ 2 4<i class="fas fa-caret-down"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item current-menu-item">
+                      <a href="./data-services.html" class="menu-link"
+                        >Data Services</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="./infra-services.html" class="menu-link"
+                        >Infra Services</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="./collaboration-services.html" class="menu-link"
+                        >Collaboration Services</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="./customer-story.html" class="menu-link"
+                    >Câu chuyện khách hàng</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="./job.html" class="menu-link">Làm việc tại VSI</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-search-wrapper">
+            <div class="header-search">
+              <img
+                src="./assets/images/search-icon.svg"
+                alt=""
+                class="header-search-icon"
+              />
+            </div>
+            <div class="header-search-box">
+              <form method="" id="searchform" class="searchform" action="">
+                <div class="search-wrap">
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Tìm kiếm . . ."
+                  />
+                  <button type="submit" class="search-btn">
+                    <img
+                      src="./assets/images/search-icon.svg"
+                      alt=""
+                      class="icon"
+                    />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="burger">
+            <div class="hamburger" id="hamburger">
+              <svg class="ham" viewBox="0 0 100 100" width="40">
+                <path
+                  class="line top"
+                  d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+                ></path>
+                <path class="line middle" d="m 30,50 h 40"></path>
+                <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <a href="./contact.html" class="header-contact btn btn-linear">
+            <span class="txt">Liên hệ</span>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-overlay"></div>
+      <div class="mobile">
+        <div class="mobile-con">
+          <div class="mobile-wr">
+            <div class="mobile-nav">
+              <div class="menu-nav menu-have-icon">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="./index.html" class="menu-link"> Trang Chủ </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./about.html" class="menu-link"> Giới thiệu </a>
+                  </li>
+                  <li class="menu-item dropdown current-menu-item">
+                    <a class="menu-link"> Dịch vụ </a>
+                    <ul class="menu-list">
+                      <li class="menu-item dropdown">
+                        <a href="./cloud-services.html" class="menu-link">
+                          Cloud Services
+                        </a>
+                        <ul class="menu-list">
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 1 1 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 1 2 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 1 3 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 1 4 </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item dropdown">
+                        <a href="./software-services.html" class="menu-link">
+                          Software Services
+                        </a>
+                        <ul class="menu-list">
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 2 1 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 2 2 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 2 3 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Dịch vụ 2 4 </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item current-menu-item">
+                        <a href="./data-services.html" class="menu-link">
+                          Data Services
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="./infra-services.html" class="menu-link">
+                          Infra Services
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="./collaboration-services.html"
+                          class="menu-link"
+                        >
+                          Collaboration Services
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./customer-story.html" class="menu-link">
+                      Câu chuyện khách hàng
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./job.html" class="menu-link">
+                      Làm việc tại VSI
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mobile-search-wr">
+              <div class="mobile-contact-wr">
+                <a href="./contact.html" class="mobile-contact btn btn-linear">
+                  <span class="txt">Liên hệ</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pg"></div>
+    </header>
+    <main class="main">
+      <div class="bnner-service">
+        <div class="bnner-service-main">
+          <div class="container">
+            <div class="service-wr row">
+              <div class="service-it home-bn-it col-6">
+                <div class="service-ctn" data-aos="fade-right">
+                  <div class="service-tag">
+                    <p class="txt">DATA SERVICES</p>
+                  </div>
+                  <div class="home-hd">
+                    <p class="h-title fw-7">
+                      Giải pháp toàn diện để số hoá doanh nghiệp
+                    </p>
+                    <div class="home-decor-circle">
+                      <div class="circle-wr">
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service-desc">
+                    <p class="txt">
+                      Chúng tôi cung cấp cho khách hàng dịch vụ tư vấn lộ trình,
+                      triển khai các giải pháp Điện toán đám mây với nền tảng
+                      công nghệ của các hãng cung cấp giải pháp và dịch vụ CNTT
+                      hàng đầu thế giới như Google Cloud Platform, Microsoft,
+                      AWS .
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="service-it col-6">
+                <div class="service-img-wr">
+                  <div class="service-img" data-aos="fade-left">
+                    <img src="./assets/images/bn-service-bg-3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bnner-service-bc">
+          <div class="container">
+            <div class="breadcrumb" data-aos="fade-up">
+              <ul class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                  <a href="./index.html" class="breadcrumb-link">Trang chủ</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="./data-services.html" class="breadcrumb-link"
+                    >Dịch vụ</a
+                  >
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="" class="breadcrumb-link">Data Services</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="task ss-pd-100 bg-w">
+        <div class="task-wr" data-aos="fade-up">
+          <div class="container">
+            <div class="task-main tabJS">
+              <div class="task-hd">
+                <div class="task-tab">
+                  <ul class="swiper tab-list">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <li class="tab-it tabBtn">
+                          <p class="txt">Cloud Services</p>
+                        </li>
+                      </div>
+                      <div class="swiper-slide">
+                        <li class="tab-it tabBtn">
+                          <p class="txt">Cloud Services</p>
+                        </li>
+                      </div>
+                      <div class="swiper-slide">
+                        <li class="tab-it tabBtn">
+                          <p class="txt">Cloud Services</p>
+                        </li>
+                      </div>
+                      <div class="swiper-slide">
+                        <li class="tab-it tabBtn">
+                          <p class="txt">Cloud Services</p>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <div class="task-bottom">
+                <div class="task-pannel tabPanel">
+                  <div class="contentTab">
+                    <div class="task-swiper">
+                      <div class="swiper taskSwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                              <img
+                                src="./assets/images/home-banner.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                              <img src="./assets/images/about-bg.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="pannel-title">
+                      <h3 class="h-title fw-7">
+                        Dedicated IT consulting tasks
+                      </h3>
+                      <p class="txt desc fw-3">
+                        Lorem ipsum dolor sit amet consectetur. Proin etiam id
+                        nec pellentesque placerat purus. Id sed sit platea nunc
+                        elementum amet lacus. Nunc pellentesque aliquet massa
+                        aenean blandit turpis. Potenti amet at aliquet ac odio
+                        pharetra enim vel nibh. Etiam sed non erat elementum
+                        quam in nulla. Sed at.
+                      </p>
+                    </div>
+                    <div class="pannel-value">
+                      <div class="pannel-value-wr">
+                        <div class="pannel-value-row row">
+                          <div class="pannel-value-list col-6 left">
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Tạo ra giá trị mới và thiết thực cho khách
+                                    hàng.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Thông qua công nghệ đóng góp vào sự tiến bộ,
+                                    thịnh vượng của xã hội.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Nâng cao đời sống và phát triển sự nghiệp
+                                    cho từng cá nhân trong tổ chức.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pannel-value-list col-6 right">
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Tạo ra giá trị mới và thiết thực cho khách
+                                    hàng.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Thông qua công nghệ đóng góp vào sự tiến bộ,
+                                    thịnh vượng của xã hội.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Nâng cao đời sống và phát triển sự nghiệp
+                                    cho từng cá nhân trong tổ chức.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="task-pannel tabPanel">
+                  <div class="contentTab">
+                    <div class="task-swiper">
+                      <div class="swiper taskSwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                              <img
+                                src="./assets/images/home-banner.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                              <img src="./assets/images/about-bg.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="pannel-title">
+                      <h3 class="h-title fw-7">
+                        Dedicated IT consulting tasks
+                      </h3>
+                      <p class="txt desc fw-3">
+                        Lorem ipsum dolor sit amet consectetur. Proin etiam id
+                        nec pellentesque placerat purus. Id sed sit platea nunc
+                        elementum amet lacus. Nunc pellentesque aliquet massa
+                        aenean blandit turpis. Potenti amet at aliquet ac odio
+                        pharetra enim vel nibh. Etiam sed non erat elementum
+                        quam in nulla. Sed at.
+                      </p>
+                    </div>
+                    <div class="pannel-value">
+                      <div class="pannel-value-wr">
+                        <div class="pannel-value-row row">
+                          <div class="pannel-value-list col-6 left">
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Tạo ra giá trị mới và thiết thực cho khách
+                                    hàng.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Thông qua công nghệ đóng góp vào sự tiến bộ,
+                                    thịnh vượng của xã hội.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Nâng cao đời sống và phát triển sự nghiệp
+                                    cho từng cá nhân trong tổ chức.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pannel-value-list col-6 right">
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Tạo ra giá trị mới và thiết thực cho khách
+                                    hàng.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Thông qua công nghệ đóng góp vào sự tiến bộ,
+                                    thịnh vượng của xã hội.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Nâng cao đời sống và phát triển sự nghiệp
+                                    cho từng cá nhân trong tổ chức.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="task-pannel tabPanel">
+                  <div class="contentTab">
+                    <div class="task-swiper">
+                      <div class="swiper taskSwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                              <img
+                                src="./assets/images/home-banner.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                              <img src="./assets/images/about-bg.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="pannel-title">
+                      <h3 class="h-title fw-7">
+                        Dedicated IT consulting tasks
+                      </h3>
+                      <p class="txt desc fw-3">
+                        Lorem ipsum dolor sit amet consectetur. Proin etiam id
+                        nec pellentesque placerat purus. Id sed sit platea nunc
+                        elementum amet lacus. Nunc pellentesque aliquet massa
+                        aenean blandit turpis. Potenti amet at aliquet ac odio
+                        pharetra enim vel nibh. Etiam sed non erat elementum
+                        quam in nulla. Sed at.
+                      </p>
+                    </div>
+                    <div class="pannel-value">
+                      <div class="pannel-value-wr">
+                        <div class="pannel-value-row row">
+                          <div class="pannel-value-list col-6 left">
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Tạo ra giá trị mới và thiết thực cho khách
+                                    hàng.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Thông qua công nghệ đóng góp vào sự tiến bộ,
+                                    thịnh vượng của xã hội.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Nâng cao đời sống và phát triển sự nghiệp
+                                    cho từng cá nhân trong tổ chức.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pannel-value-list col-6 right">
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Tạo ra giá trị mới và thiết thực cho khách
+                                    hàng.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Thông qua công nghệ đóng góp vào sự tiến bộ,
+                                    thịnh vượng của xã hội.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Nâng cao đời sống và phát triển sự nghiệp
+                                    cho từng cá nhân trong tổ chức.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="task-pannel tabPanel">
+                  <div class="contentTab">
+                    <div class="task-swiper">
+                      <div class="swiper taskSwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                              <img
+                                src="./assets/images/home-banner.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                              <img src="./assets/images/about-bg.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="pannel-title">
+                      <h3 class="h-title fw-7">
+                        Dedicated IT consulting tasks
+                      </h3>
+                      <p class="txt desc fw-3">
+                        Lorem ipsum dolor sit amet consectetur. Proin etiam id
+                        nec pellentesque placerat purus. Id sed sit platea nunc
+                        elementum amet lacus. Nunc pellentesque aliquet massa
+                        aenean blandit turpis. Potenti amet at aliquet ac odio
+                        pharetra enim vel nibh. Etiam sed non erat elementum
+                        quam in nulla. Sed at.
+                      </p>
+                    </div>
+                    <div class="pannel-value">
+                      <div class="pannel-value-wr">
+                        <div class="pannel-value-row row">
+                          <div class="pannel-value-list col-6 left">
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Tạo ra giá trị mới và thiết thực cho khách
+                                    hàng.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Thông qua công nghệ đóng góp vào sự tiến bộ,
+                                    thịnh vượng của xã hội.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Nâng cao đời sống và phát triển sự nghiệp
+                                    cho từng cá nhân trong tổ chức.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pannel-value-list col-6 right">
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Tạo ra giá trị mới và thiết thực cho khách
+                                    hàng.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Thông qua công nghệ đóng góp vào sự tiến bộ,
+                                    thịnh vượng của xã hội.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pannel-value-it">
+                              <div class="pannel-value-box">
+                                <div class="pannel-value-icon">
+                                  <img
+                                    src="./assets/images/check-icon.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="pannel-value-ctn">
+                                  <p class="txt">
+                                    Nâng cao đời sống và phát triển sự nghiệp
+                                    cho từng cá nhân trong tổ chức.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tech ss-pd-100 bg-w">
+        <div class="tech-wr" data-aos="fade-up">
+          <div class="container">
+            <div class="tech-hd">
+              <div class="customer-hd">
+                <p class="sub-hd fw-8">CÔNG NGHỆ</p>
+                <h2 class="h-title fw-7">CÔNG NGHỆ CHÚNG TÔI ÁP DỤNG</h2>
+              </div>
+              <div class="customer-desc">
+                <p class="txt">
+                  Lorem ipsum dolor sit amet consectetur. Volutpat convallis
+                  fusce netus urna sagittis urna. Facilisi consequat augue donec
+                  viverra sed sapien maecenas. Nisl volutpat nibh sit vulputate
+                  orci.
+                </p>
+              </div>
+            </div>
+            <div class="tech-main tabJS">
+              <div class="tech-tab">
+                <ul class="tab-list row">
+                  <li class="tab-it col-3 tabBtn active">
+                    <p class="txt">Front-End</p>
+                  </li>
+                  <li class="tab-it col-3 tabBtn">
+                    <p class="txt">Back-End</p>
+                  </li>
+                  <li class="tab-it col-3 tabBtn">
+                    <p class="txt">Database</p>
+                  </li>
+                  <li class="tab-it col-3 tabBtn">
+                    <p class="txt">CI/CD/Deployment</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tech-pannel">
+                <div class="tab-pannel tabPanel">
+                  <div class="contentTab">
+                    <div class="pannel-wr">
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pannel tabPanel">
+                  <div class="contentTab">
+                    <div class="pannel-wr">
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pannel tabPanel">
+                  <div class="contentTab">
+                    <div class="pannel-wr">
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pannel tabPanel">
+                  <div class="contentTab">
+                    <div class="pannel-wr">
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pannel-it">
+                        <div class="pannel-inner-wr">
+                          <div class="pannel-inner">
+                            <a href="" class="pannel-img">
+                              <img src="./assets/images/tech.png" alt="" />
+                            </a>
+                            <div class="pannel-ctn">
+                              <a href="" class="txt">COMPANY</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="customer ss-pd-100">
+        <div class="container">
+          <div class="customer-wr">
+            <div class="customer-hd">
+              <p class="sub-hd fw-8" data-aos="fade-up">KHÁCH HÀNG</p>
+              <h2 class="h-title fw-7" data-aos="fade-up">
+                KHÁCH HÀNG CỦA VSI
+              </h2>
+            </div>
+            <div class="customer-desc">
+              <p class="txt" data-aos="fade-up">
+                Lorem ipsum dolor sit amet consectetur. Volutpat convallis fusce
+                netus urna sagittis urna. Facilisi consequat augue donec viverra
+                sed sapien maecenas. Nisl volutpat nibh sit vulputate orci.
+              </p>
+            </div>
+            <div class="customer-swiper">
+              <div class="fade-up" data-aos="fade-up">
+                <div class="swiper ctmSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="company">
+                        <a href="" class="company-link">
+                          <div class="company-img">
+                            <img src="./assets/images/company.png" alt="" />
+                          </div>
+                          <div class="company-name">
+                            <p class="txt fw-7">COMPANY</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="company">
+                        <a href="" class="company-link">
+                          <div class="company-img">
+                            <img src="./assets/images/company.png" alt="" />
+                          </div>
+                          <div class="company-name">
+                            <p class="txt fw-7">COMPANY</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="company">
+                        <a href="" class="company-link">
+                          <div class="company-img">
+                            <img src="./assets/images/company.png" alt="" />
+                          </div>
+                          <div class="company-name">
+                            <p class="txt fw-7">COMPANY</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="company">
+                        <a href="" class="company-link">
+                          <div class="company-img">
+                            <img src="./assets/images/company.png" alt="" />
+                          </div>
+                          <div class="company-name">
+                            <p class="txt fw-7">COMPANY</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="company">
+                        <a href="" class="company-link">
+                          <div class="company-img">
+                            <img src="./assets/images/company.png" alt="" />
+                          </div>
+                          <div class="company-name">
+                            <p class="txt fw-7">COMPANY</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="company">
+                        <a href="" class="company-link">
+                          <div class="company-img">
+                            <img src="./assets/images/company.png" alt="" />
+                          </div>
+                          <div class="company-name">
+                            <p class="txt fw-7">COMPANY</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="feedback ss-pd-100">
+        <div class="feedback-bg">
+          <img src="./assets/images/feedback-bg.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="feedback-wr" data-aos="fade-up">
+            <div class="feedback-counter counter-js">
+              <div class="feedback-counter-bg">
+                <img src="./assets/images/counter-bg.png" alt="" />
+              </div>
+              <div class="inner row">
+                <div class="feedback-counter-it col-3">
+                  <div class="wrapper">
+                    <div class="feedback-icon">
+                      <img src="./assets/images/company-icon.svg" alt="" />
+                    </div>
+                    <div class="feedback-ctn">
+                      <div class="number">
+                        <span class="numb-count fw-7" data-count="12">0</span>
+                      </div>
+                      <p class="txt-w fw-6">Năm thành lập</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback-counter-it col-3">
+                  <div class="wrapper">
+                    <div class="feedback-icon">
+                      <img src="./assets/images/team-icon.svg" alt="" />
+                    </div>
+                    <div class="feedback-ctn">
+                      <div class="number">
+                        <span class="numb-count fw-7" data-count="250">0</span>
+                        <span class="txt-w fw-7 mark">+</span>
+                      </div>
+                      <p class="txt-w fw-6">Nhóm</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback-counter-it col-3">
+                  <div class="wrapper">
+                    <div class="feedback-icon">
+                      <img src="./assets/images/complete-icon.svg" alt="" />
+                    </div>
+                    <div class="feedback-ctn">
+                      <div class="number">
+                        <span class="numb-count fw-7 plus" data-count="60"
+                          >0</span
+                        >
+                        <span class="txt-w fw-7 mark">+</span>
+                      </div>
+                      <p class="txt-w fw-6">Dự án hoàn thiện</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback-counter-it col-3">
+                  <div class="wrapper">
+                    <div class="feedback-icon">
+                      <img src="./assets/images/iteration-icon.svg" alt="" />
+                    </div>
+                    <div class="feedback-ctn">
+                      <div class="number">
+                        <span class="numb-count fw-7 plus" data-count="30"
+                          >0</span
+                        >
+                        <span class="txt-w fw-7 mark">+</span>
+                      </div>
+                      <p class="txt-w fw-6">Dự án đang tiến hành</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-hd">
+              <p class="sub-hd fw-8">CẢM NHẬN</p>
+              <h2 class="h-title fw-7">ĐÁNH GIÁ CỦA KHÁCH HÀNG</h2>
+            </div>
+            <div class="feedback-swiper">
+              <div class="swiper fbSwiper">
+                <div class="swiper-wrapper">
+                  <!-- slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="fb-it">
+                        <div class="fb-avatar">
+                          <div class="fb-avatar-img">
+                            <img src="./assets/images/avatar2.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="fb-ctn">
+                          <div class="star">
+                            <div class="star-list">
+                              <div class="star-flex star-empty">
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                              <div
+                                class="star-flex star-filter"
+                                style="width: 20%"
+                              >
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fb-name">
+                            <h3 class="title fw-6">David Beckham</h3>
+                            <p class="desc">ADOBE CTO</p>
+                          </div>
+                          <div class="fb-desc">
+                            <p class="desc fw-3">
+                              Lorem ipsum dolor sit amet consectetur. Integer
+                              auctor placerat nam eget sagittis. Ut ac congue
+                              vel dictumst tellus a ultricies dignissim.
+                              Adipiscing.
+                            </p>
+                          </div>
+                          <div class="decor start">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                          <div class="decor end">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="fb-it">
+                        <div class="fb-avatar">
+                          <div class="fb-avatar-img">
+                            <img src="./assets/images/avatar2.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="fb-ctn">
+                          <div class="star">
+                            <div class="star-list">
+                              <div class="star-flex star-empty">
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                              <div
+                                class="star-flex star-filter"
+                                style="width: 20%"
+                              >
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fb-name">
+                            <h3 class="title fw-6">David Beckham</h3>
+                            <p class="desc">ADOBE CTO</p>
+                          </div>
+                          <div class="fb-desc">
+                            <p class="desc fw-3">
+                              Lorem ipsum dolor sit amet consectetur. Integer
+                              auctor placerat nam eget sagittis. Ut ac congue
+                              vel dictumst tellus a ultricies dignissim.
+                              Adipiscing.
+                            </p>
+                          </div>
+                          <div class="decor start">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                          <div class="decor end">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="fb-it">
+                        <div class="fb-avatar">
+                          <div class="fb-avatar-img">
+                            <img src="./assets/images/avatar2.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="fb-ctn">
+                          <div class="star">
+                            <div class="star-list">
+                              <div class="star-flex star-empty">
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                              <div
+                                class="star-flex star-filter"
+                                style="width: 20%"
+                              >
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fb-name">
+                            <h3 class="title fw-6">David Beckham</h3>
+                            <p class="desc">ADOBE CTO</p>
+                          </div>
+                          <div class="fb-desc">
+                            <p class="desc fw-3">
+                              Lorem ipsum dolor sit amet consectetur. Integer
+                              auctor placerat nam eget sagittis. Ut ac congue
+                              vel dictumst tellus a ultricies dignissim.
+                              Adipiscing.
+                            </p>
+                          </div>
+                          <div class="decor start">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                          <div class="decor end">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide 4 -->
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="fb-it">
+                        <div class="fb-avatar">
+                          <div class="fb-avatar-img">
+                            <img src="./assets/images/avatar2.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="fb-ctn">
+                          <div class="star">
+                            <div class="star-list">
+                              <div class="star-flex star-empty">
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                              <div
+                                class="star-flex star-filter"
+                                style="width: 20%"
+                              >
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fb-name">
+                            <h3 class="title fw-6">David Beckham</h3>
+                            <p class="desc">ADOBE CTO</p>
+                          </div>
+                          <div class="fb-desc">
+                            <p class="desc fw-3">
+                              Lorem ipsum dolor sit amet consectetur. Integer
+                              auctor placerat nam eget sagittis. Ut ac congue
+                              vel dictumst tellus a ultricies dignissim.
+                              Adipiscing.
+                            </p>
+                          </div>
+                          <div class="decor start">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                          <div class="decor end">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide 5 -->
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="fb-it">
+                        <div class="fb-avatar">
+                          <div class="fb-avatar-img">
+                            <img src="./assets/images/avatar2.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="fb-ctn">
+                          <div class="star">
+                            <div class="star-list">
+                              <div class="star-flex star-empty">
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                              <div
+                                class="star-flex star-filter"
+                                style="width: 20%"
+                              >
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fb-name">
+                            <h3 class="title fw-6">David Beckham</h3>
+                            <p class="desc">ADOBE CTO</p>
+                          </div>
+                          <div class="fb-desc">
+                            <p class="desc fw-3">
+                              Lorem ipsum dolor sit amet consectetur. Integer
+                              auctor placerat nam eget sagittis. Ut ac congue
+                              vel dictumst tellus a ultricies dignissim.
+                              Adipiscing.
+                            </p>
+                          </div>
+                          <div class="decor start">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                          <div class="decor end">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide 6 -->
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="fb-it">
+                        <div class="fb-avatar">
+                          <div class="fb-avatar-img">
+                            <img src="./assets/images/avatar2.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="fb-ctn">
+                          <div class="star">
+                            <div class="star-list">
+                              <div class="star-flex star-empty">
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa-empty.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                              <div
+                                class="star-flex star-filter"
+                                style="width: 20%"
+                              >
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                                <img
+                                  src="./assets/images/star-opa.svg"
+                                  alt=""
+                                  class="icon"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fb-name">
+                            <h3 class="title fw-6">David Beckham</h3>
+                            <p class="desc">ADOBE CTO</p>
+                          </div>
+                          <div class="fb-desc">
+                            <p class="desc fw-3">
+                              Lorem ipsum dolor sit amet consectetur. Integer
+                              auctor placerat nam eget sagittis. Ut ac congue
+                              vel dictumst tellus a ultricies dignissim.
+                              Adipiscing.
+                            </p>
+                          </div>
+                          <div class="decor start">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                          <div class="decor end">
+                            <img src="./assets/images/cmt-decor.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination-fb"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bnner">
+        <div class="bnner-wr row">
+          <div class="bnner-it col-6">
+            <div class="bnner-img-wr">
+              <div class="bnner-img" data-aos="fade">
+                <img src="./assets/images/service-bg.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="bnner-it col-6">
+            <div class="bnner-ctn">
+              <div class="bnner-hd" data-aos="fade-up">
+                <p class="sub-hd fw-8">KHÁCH HÀNG</p>
+                <h2 class="h-title fw-7">CÂU CHUYỆN KHÁCH HÀNG TẠI VSI</h2>
+              </div>
+              <div class="bnner-desc" data-aos="fade-up">
+                <p class="txt-w">
+                  Lorem ipsum dolor sit amet consectetur. Vitae turpis
+                  adipiscing massa.
+                </p>
+                <p class="txt-w italic fw-1">
+                  Lorem ipsum dolor sit amet consectetur. Tortor dolor ac ut a
+                  tellus. Placerat ut tristique proin urna ligula amet at.
+                </p>
+              </div>
+              <a href="" class="btn btn-second btn-more" data-aos="fade-up">
+                <span class="txt">Xem thêm</span>
+                <i class="fas fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-contact have-select ss-pd-100">
+        <div class="container">
+          <div class="form-hd" data-aos="fade-up">
+            <div class="intro-hd">
+              <p class="sub-hd fw-8">LIÊN HỆ</p>
+              <h2 class="h-title fw-7">LIÊN HỆ NGAY VỚI CHÚNG TÔI</h2>
+            </div>
+          </div>
+          <div class="form-main row setG" data-aos="fade-up">
+            <div class="form-it col-7">
+              <div class="form-wr">
+                <form action="">
+                  <div class="form-control-wr row">
+                    <div class="form-control col-6">
+                      <label for="name">Họ tên:</label>
+                      <input type="text" name="name" />
+                    </div>
+                    <div class="form-control col-6">
+                      <label for="email">Email:</label>
+                      <input type="email" name="email" />
+                    </div>
+                  </div>
+                  <div class="form-control-wr row">
+                    <div class="form-control col-6">
+                      <label for="company">Công ty:</label>
+                      <input type="text" name="company" />
+                    </div>
+                    <div class="form-control col-6">
+                      <label for="phone">Số điện thoại:</label>
+                      <input type="tel" name="phone" />
+                    </div>
+                  </div>
+                  <div class="form-control">
+                    <label for="linhvuc">Lĩnh vực bạn cần</label>
+                    <select name="" id="" class="select-services">
+                      <option value="cloudservices">Cloud Services</option>
+                      <option value="softwareservices">
+                        Software Services
+                      </option>
+                      <option value="dataservices">Data Services</option>
+                      <option value="infra">Infra Services</option>
+                      <option value="collaboration">
+                        Collaboration Services
+                      </option>
+                    </select>
+                  </div>
+                  <div class="form-control">
+                    <label for="note">Lời nhắn</label>
+                    <textarea
+                      name="note"
+                      id=""
+                      cols="40"
+                      rows="1"
+                      placeholder="Kể cho chúng tôi nghe về ý tưởng của bạn"
+                    ></textarea>
+                  </div>
+                  <div class="form-btn">
+                    <a href="" class="btn-submit btn btn-linear">
+                      <span class="txt">Liên hệ ngay</span>
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="form-it col-5">
+              <div class="form-it-img">
+                <img src="./assets/images/form-bg.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="ft-sign ss-pd" data-aos="fade-up">
+        <div class="container">
+          <div class="ft-sign-row row">
+            <div class="sign-item col-6">
+              <div class="sign-left">
+                <h2 class="h-title fw-7">Đăng ký để nhận cập nhật</h2>
+                <p class="txt-w fw-3">
+                  Lorem ipsum dolor sit amet consectetur. Viverra dolor odio
+                  lectus malesuada proin porta elementum. Tincidunt adipiscing
+                  nisl.
+                </p>
+              </div>
+            </div>
+            <div class="sign-item col-6">
+              <div class="sign-right">
+                <form action="">
+                  <div class="sign-form">
+                    <input
+                      type="text"
+                      class="sign-form-input"
+                      placeholder="Điền email của bạn"
+                    />
+                    <button type="submit" class="sign-form-btn">
+                      <img
+                        src="./assets/images/cursor-icon.svg"
+                        alt=""
+                        class="icon"
+                      />
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-main" data-aos="fade-up">
+        <div class="container">
+          <div class="ft-main-row row">
+            <div class="ft-item col-4">
+              <div class="ft-logo">
+                <a href="" class="custom-logo-link">
+                  <img src="./assets/images/vsi_white_cut.png" alt="" />
+                </a>
+              </div>
+              <div class="ft-contact">
+                <ul class="contact-list">
+                  <li class="contact-item">
+                    <img
+                      class="icon"
+                      src="./assets/images/pin-icon.svg"
+                      alt=""
+                    />
+                    <a
+                      href="https://goo.gl/maps/4yPiNqg6vqtHb1gu9"
+                      class="contact-link"
+                    >
+                      Tầng 3, Tòa AD Building, 82 Dịch Vọng Hậu, P. Dịch Vọng
+                      Hậu, Q. Cầu Giấy, TP. Hà Nội
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <img
+                      class="icon"
+                      src="./assets/images/phone-icon.svg"
+                      alt=""
+                    />
+                    <a href="tel:024 3200 6062" class="contact-link">
+                      024 3200 6062
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <img
+                      class="icon"
+                      src="./assets/images/mail-icon.svg"
+                      alt=""
+                    />
+                    <a href="mailto:info@vsi.com.vn" class="contact-link">
+                      info@vsi.com.vn
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="ft-item col-3">
+              <h3 class="h-title fw-7">Về công ty</h3>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="" class="menu-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Dịch vụ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Câu chuyện khách hàng</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Làm việc tại VSI</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ft-item col-3">
+              <h3 class="h-title fw-7">Dịch vụ của chúng tôi</h3>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="" class="menu-link">Tư vấn công nghệ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Phát triển phần mềm</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Phát triển Blockchain</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Phân tích dữ liệu</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Phát triển Website</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">Phát triển ứng dụng di động</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-copy" data-aos="fade-up">
+        <div class="container">
+          <div class="copy ss-pd-40">
+            <span class="desc">
+              <span class="copy-icon"> </span>
+              <p class="txt-w">ToanThang</p>
+              <span class="copy-icon">
+                <img src="./assets/images/copy-icon.svg" alt="" />
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="ft-bg">
+        <img src="./assets/images/ft-bg.png" alt="" />
+      </div>
+    </footer>
+    <div class="back-to-top backToTop">
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+    </div>
+    <script src="./js/library/jquery/jquery.js"></script>
+    <script src="./js/library/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/library/aos/aos.js"></script>
+    <script src="./js/library/select2/select2.min.js"></script>
+    <script src="./js/library/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="./js/library/gallery/lightgallery-all.min.js"></script>
+    <script src="./js/library/jquery/jquery-migrate.js"></script>
+    <script src="./js/library/smoothscroll/SmoothScroll.min.js"></script>
+    <script src="./js/library/gsap/gsap.js"></script>
+    <script src="./js/library/gsap/scrollTrigger.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

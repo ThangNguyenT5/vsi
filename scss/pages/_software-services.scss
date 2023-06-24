@@ -1,0 +1,189 @@
+.post {
+    &-service {
+        overflow: hidden;
+
+        &-it {
+            &:not(:last-child) {
+                margin-bottom: 10rem;
+                transition: all 0.3s linear;
+
+                @include max (1200px) {
+                    margin-bottom: 4rem;
+                }
+            }
+
+            &:nth-child(even) {
+                .post {
+                    &-wr {
+                        flex-direction: row-reverse;
+                    }
+
+                    &-it {
+                        &.wid {
+                            &-7 {
+                                margin-right: 0;
+                                margin-left: -4rem;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-wr {
+        @include flex;
+
+        @include max(800px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &-it {
+        &.wid {
+            &-7 {
+                width: calc(7/12*100%);
+                margin-right: -4rem;
+            }
+
+            &-5 {
+                width: calc(5.5/12*100%);
+                padding-top: 5.7rem;
+                padding-bottom: 6.4rem;
+                position: relative;
+                margin-left: auto;
+                transition: all 0.3s linear;
+
+                // @include max(1200px) {
+                //     padding-top: 2.7rem;
+                //     padding-bottom: 0rem;
+                // }
+            }
+        }
+
+        @include max(800px) {
+            width: 100% !important;
+
+            &.wid-5 {
+                margin-top: -4rem;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding: 0 2.7rem;
+
+                @include max (600px) {
+                    padding: 0 2rem;
+                }
+
+                @include max (440px) {
+                    padding: 0 1.4rem;
+                }
+            }
+        }
+
+        .post {
+            &-ctn {
+                padding: 3.7rem 4rem;
+                background-color: #FCFAF9;
+                box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+                border-radius: 0.8rem;
+                transition: all 0.3s linear;
+
+                @include max (1200px) {
+                    padding: 2.7rem;
+                }
+
+                @include max (600px) {
+                    padding: 2rem;
+                }
+
+
+                .h-title {
+                    font-weight: 700;
+                    line-height: 1.5;
+                    margin-bottom: 3rem;
+                    transition: inherit;
+
+                    @include max (1200px) {
+                        margin-bottom: 2rem;
+                    }
+
+                    @include max (600px) {
+                        margin-bottom: 1.4rem;
+                    }
+                }
+
+                .txt.desc {
+                    font-weight: 300;
+                }
+            }
+
+            &-hd {
+                margin-bottom: 3rem;
+                transition: all 0.3s linear;
+                text-align: unset;
+            }
+
+            &-main {
+                .post-value {
+                    &-list {}
+
+                    &-it {
+                        @include flex;
+                        justify-content: flex-start;
+                        align-items: start;
+
+                        &:not(:last-child) {
+                            margin-bottom: 2.6rem;
+
+                            @include max (600px) {
+                                margin-bottom: 1.4rem;
+                            }
+                        }
+                    }
+
+                    &-img {
+                        width: 100%;
+                        max-width: 2rem;
+                        margin-right: 2rem;
+                        @include mid-flex;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    &-ctn {
+                        .txt {
+                            margin-top: -0.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-img {
+        height: 100%;
+        @include imgPd(577, 690);
+        border-radius: 0.8rem;
+        transition: all 0.3s linear;
+
+        @include max(800px) {
+            @include imgPd(9, 16);
+        }
+
+        &-wr {
+            height: 100%;
+        }
+
+        img {
+            @include imgCover;
+        }
+    }
+}
+
+* {
+    // outline: 1px solid greenyellow;
+}
